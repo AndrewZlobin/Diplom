@@ -1,0 +1,29 @@
+.flex-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.flex-elem {
+    flex: 1;
+}
+
+.flex-elem-2 {
+    flex: 2;
+    align-items: flex-end;
+}
+.flex-elem-3 {
+    flex: 3;
+}
+
+label {
+    font-family: "Droid Sans";
+    font-weight: bold;
+    font-size: 90%;
+    color: darkgoldenrod;
+}
+
+fieldset {
+    border: 0 none;
+}

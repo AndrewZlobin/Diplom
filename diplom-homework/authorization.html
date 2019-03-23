@@ -9,6 +9,8 @@
             href="favicon.ico">
         <link rel="stylesheet"
               href="styles/style-gen.css">
+        <link rel="stylesheet"
+              href="styles/style-auth.css">
         <meta charset="UTF-8">
         <meta name="description" content="Форма для авторизации">
     </head>
@@ -32,57 +34,123 @@
             </div>
 
             <div class="flex-row">
-                <div class="flex-elem">
-                    <h1 align="center">Если у Вас имеется абонементная карта, авторизируйтесь для того, чтобы
-                        получить возможность работы с ней:</h1>
-                </div>
+                <form action="PHPServer"
+                      method="post"
+                      enctype="multipart/form-data">
+                    <fieldset>
+                        <div class="flex-elem-3">
+                            <legend align="center"><strong>Авторизация для владельцев абонементных карт</strong></legend>
+                        </div>
+                            <div class="flex-elem-3">
+                                <div class="flex-row">
+                                    <div class="flex-elem">
+                                        <label for="auth_mail">Ваша почта:
+                                        </label>
+                                    </div>
+                                    <div class="flex-elem-2">
+                                        <input id="auth_mail"
+                                               type="email"
+                                               placeholder="введите сюда адрес своей электронной почты"
+                                               size="40"
+                                               required>
+                                    </div>
+                                </div>
+                                <div class="flex-row">
+                                    <div class="flex-elem">
+                                        <label for="auth_pwd">Пароль:</label>
+                                    </div>
+                                    <div class="flex-elem-2">
+                                        <input id="auth_pwd"
+                                               type="password"
+                                               placeholder="введите сюда пароль"
+                                               size="40"
+                                               required>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="flex-row">
+                                    <div class="flex-elem">
+                                        <label for="auth_reset">
+                                            Нажмите, чтобы сбросить, если введенные данные неверны:
+                                        </label>
+                                    </div>
+                                    <div class="flex-elem-2 buttons">
+                                        <input id="auth_reset"
+                                               type="reset">
+                                    </div>
+                                </div>
+                                <div class="flex-row">
+                                    <div class="flex-elem">
+                                        <label for="auth_submit">
+                                            Авторизация и вход на сайт:
+                                        </label>
+                                    </div>
+                                    <div class="flex-elem-2 buttons">
+                                        <input id="auth_submit"
+                                               type="submit">
+                                    </div>
+                                </div>
+                            </div>
+                    </fieldset>
+                </form>
             </div>
 
-                <div class="flex-row">
-                    <form action="PHPServer"
-                          method="post"
-                          enctype="multipart/form-data">
-                        <fieldset>
-                            <div class="flex-elem">
-                                <legend align="center"><strong>Пожалуйста, авторизируйтесь</strong></legend>
-                            </div>
-                            <div class="flex-row">
-                                <div class="flex-elem">
-                                    <label for="auth_mail">Ваша почта:</label>
-                                </div>
-                                <div class="flex-elem">
-                                    <label for="auth_pwd">Пароль:</label>
-                                </div>
-                            </div>
-                            <div class="flex-row">
-                            <div class="flex-elem">
-                                <input id="auth_mail"
-                                       type="email"
-                                       placeholder="введите сюда адрес своей электронной почты"
-                                       size="50"
-                                       required>
-                            </div>
-                                <div class="flex-elem">
-                                    <input id="auth_pwd"
-                                           type="password"
-                                           placeholder="введите сюда пароль"
-                                           size="50"
-                                           required>
-                                </div>
-                            </div>
-                            <div>
-                                <label for="auth_reset"><strong>Нажмите, чтобы сбросить, если введенные данные неверны:</strong></label>
-                                <input id="auth_reset"
-                                       type="reset">
-                            </div>
-                            <div>
-                                <label for="auth_submit"><strong>Авторизация и вход на сайт:</strong></label>
-                                <input id="auth_submit"
-                                       type="submit">
-                            </div>
-                        </fieldset>
-                    </form>
-                </div>
-            </div>
+
+            <!--<div class="flex-row">-->
+                <!--<div class="flex-elem-3">-->
+                    <!--<p>Для работы с абонементной картой необходимо авторизироваться:</p>-->
+                <!--<div class="flex-row flex-elem-2">-->
+                    <!--<form action="PHPServer"-->
+                          <!--method="post"-->
+                          <!--enctype="multipart/form-data">-->
+                        <!--<fieldset>-->
+                            <!--<div class="flex-elem">-->
+                                <!--<legend align="center"><strong>Пожалуйста, авторизируйтесь</strong></legend>-->
+                            <!--</div>-->
+                            <!--<div class="flex-row">-->
+                                <!--<div class="flex-elem">-->
+                                    <!--<label for="auth_mail">Ваша почта:</label>-->
+                                <!--</div>-->
+                                <!--<div class="flex-elem">-->
+                                    <!--<label for="auth_pwd">Пароль:</label>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="flex-row">-->
+                            <!--<div class="flex-elem">-->
+                                <!--<input id="auth_mail"-->
+                                       <!--type="email"-->
+                                       <!--placeholder="введите сюда адрес своей электронной почты"-->
+                                       <!--size="50"-->
+                                       <!--required>-->
+                            <!--</div>-->
+                                <!--<div class="flex-elem">-->
+                                    <!--<input id="auth_pwd"-->
+                                           <!--type="password"-->
+                                           <!--placeholder="введите сюда пароль"-->
+                                           <!--size="50"-->
+                                           <!--required>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div>-->
+                                <!--<label for="auth_reset">-->
+                                    <!--<strong>Нажмите, чтобы сбросить, если введенные данные неверны:-->
+                                    <!--</strong>-->
+                                <!--</label>-->
+                                <!--<input id="auth_reset"-->
+                                       <!--type="reset">-->
+                            <!--</div>-->
+                            <!--<div>-->
+                                <!--<label for="auth_submit">-->
+                                    <!--<strong>Авторизация и вход на сайт:-->
+                                    <!--</strong>-->
+                                <!--</label>-->
+                                <!--<input id="auth_submit"-->
+                                       <!--type="submit">-->
+                            <!--</div>-->
+                        <!--</fieldset>-->
+                    <!--</form>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
     </body>
 </html>

@@ -1,5 +1,7 @@
 .flex-row {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .flex-elem {
@@ -9,8 +11,8 @@
 .memo {
     color: darkgoldenrod;
     font-family: "Times New Roman";
+    font-size: 150%;
 }
-
 
 .flex-elem > a {
     text-decoration: none;
@@ -18,8 +20,13 @@
     background: whitesmoke;
     border: lightslategray solid 1px;
     border-radius: 1px;
+    font-size: 150%;
 }
 
+a:hover {
+    background: darkgrey;
+    color: whitesmoke;
+}
 
 .popup {
     margin: 0; /* убираем отступы */

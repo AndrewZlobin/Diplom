@@ -8,8 +8,10 @@
             href="favicon.ico">
     <link rel="stylesheet"
           href="styles/style-gen.css">
+    <link rel="stylesheet"
+          href="styles/style-const.css">
     <meta charset="UTF-8">
-    <meta name="description" content="Страница для помощи пользователям">
+    <meta name="description" content="Страница для быстрой авторизации/регистрации">
 </head>
 <body>
     <div class="container">
@@ -28,15 +30,6 @@
                     </ul>
                 </li>
             </ul>
-        </div>
-        <div class="flex-row">
-            <div class="flex-elem">
-                <h2 class="memo">Для быстрой авторизации постоянных клиентов пройдите по ссылке:</h2>
-            </div>
-            <div class="flex-elem">
-                <h2 class="memo">Для быстрой регистрации новой абонементной карты пройдите по сссылке:</h2>
-            </div>
-        </div>
 
         <div id="popup-auth" class="popup">
             <div class="popupwindow">
@@ -56,9 +49,19 @@
             </div>
         </div>
 
+        </div>
         <div class="flex-row">
             <div class="flex-elem">
+                <p class="memo">Для быстрой авторизации постоянных клиентов пройдите по ссылке:</p>
+            </div>
+            <div class="flex-elem">
                 <a href="#popup-auth">Для авторизированных пользователей</a>
+            </div>
+        </div>
+
+        <div class="flex-row">
+            <div class="flex-elem">
+                <p class="memo">Для быстрой регистрации новой абонементной карты пройдите по сссылке:</p>
             </div>
             <div class="flex-elem">
                 <a href="#popup-reg">Для новых пользователей</a>
