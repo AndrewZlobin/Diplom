@@ -1,2 +1,3 @@
-# HTML-homework
-Homeworks for HTML lessons (IFMO)
+# Diplom
+Graduated Project (IFMO)
+For now: HTML + CSS
