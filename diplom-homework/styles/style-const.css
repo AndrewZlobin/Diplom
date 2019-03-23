@@ -1,0 +1,52 @@
+.flex-row {
+    display: flex;
+}
+
+.flex-elem {
+    flex: 1;
+}
+
+.memo {
+    color: darkgoldenrod;
+    font-family: "Times New Roman";
+}
+
+
+.flex-elem > a {
+    text-decoration: none;
+    color: black;
+    background: whitesmoke;
+    border: lightslategray solid 1px;
+    border-radius: 1px;
+}
+
+
+.popup {
+    margin: 0; /* убираем отступы */
+    padding: 0; /* убираем отступы */
+    position: fixed; /* фиксируем положение */
+    top:0; /* растягиваем блок по всему экрану */
+    bottom:0;
+    left:0;
+    right:0;
+    background: rgba(0,0,0,0.5); /* полупрозрачный цвет фона */
+    z-index:100; /* выводим фон поверх всех слоев на странице браузера */
+    opacity:0; /* Делаем невидимым */
+    pointer-events: none; /* элемент невидим для событий мыши */
+}
+
+/* при отображении модального окно - именно здесь начинается магия */
+.popup:target {
+    opacity: 1; /* делаем окно видимым */
+    pointer-events: auto; /* элемент видим для событий мыши */
+}
+
+/* ширина диалогового окна и его отступы от экрана */
+.popupwindow {
+    width: 100%;
+    max-width: 300px;
+    margin: 10% auto;
+    padding: 2%;
+    background: darkgoldenrod;
+    border-radius: 3px;
+}

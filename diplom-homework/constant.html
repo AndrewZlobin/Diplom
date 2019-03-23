@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Constant</title>
+    <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="favicon.ico">
+    <link rel="stylesheet"
+          href="styles/style-gen.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Страница для помощи пользователям">
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li><a href="main.html">Оплата</a></li>
+                <li><a href="constant.html">Для постоянных пользователей</a>
+                    <ul class="submenu">
+                        <li><a href="authorization.html">Авторизация</a></li>
+                        <li><a href="registration.html">Регистрация</a></li>
+                    </ul>
+                </li>
+                <li><a href="aboutus.html">О нас</a>
+                    <ul class="submenu">
+                        <li><a href="objects.html">Объекты</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="flex-row">
+            <div class="flex-elem">
+                <h2 class="memo">Для быстрой авторизации постоянных клиентов пройдите по ссылке:</h2>
+            </div>
+            <div class="flex-elem">
+                <h2 class="memo">Для быстрой регистрации новой абонементной карты пройдите по сссылке:</h2>
+            </div>
+        </div>
+
+        <div id="popup-auth" class="popup">
+            <div class="popupwindow">
+                <form>
+                    <input type="text" placeholder="Номер Вашей карты">
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+
+        <div id="popup-reg" class="popup">
+            <div class="popupwindow">
+                <form>
+                    <input type="text" placeholder="Ваш мобильный телефон">
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+
+        <div class="flex-row">
+            <div class="flex-elem">
+                <a href="#popup-auth">Для авторизированных пользователей</a>
+            </div>
+            <div class="flex-elem">
+                <a href="#popup-reg">Для новых пользователей</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

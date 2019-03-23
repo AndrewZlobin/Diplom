@@ -1,6 +1,5 @@
-/*@import url("grid.css");*/
-/*@import url("style-dealer.css");*/
-/*@import url("style-adv.css");*/
+@import url("style-auth.css");
+@import url("style-const.css");
 
 * {
     margin: 0;
@@ -22,53 +21,45 @@ body {
     margin: 0 auto;
 }
 
-/*.submenu {*/
-    /*position: absolute;*/
-/*}*/
 
-.flex-row-nav {
+.menu a {
+    color: black;
+    background: darkgrey;
     display: flex;
-    justify-content: space-around;
-    /*align-items: flex-start;*/
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 48px;
+    font-family: "Droid Sans";
+}
+
+.menu a:hover {
+    background: lightslategray;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu li {
     width: 100%;
+    position: relative;
+    text-align: center;
 }
 
-/*.flex-row > li {*/
-    /*display: block;*/
-    /*position: relative;*/
-/*}*/
-
-.flex-col-nav {
-    display: flex;
-    flex-direction: column;
+.menu li:hover .submenu > li {
+    display: block;
+    /*top: 0px;*/
 }
 
-.flex-elem {
-    flex: 1;
-}
-
-.container .menu .submenu {
+.submenu > li {
     display: none;
 }
 
-.container ul li:hover .submenu {
-    display: block;
+.submenu {
+    display: flex;
+    flex-direction: column;
     position: absolute;
-}
-
-ul > li {
-    list-style-type: none;
-    display: inline-block;
-    border: black solid 3px;
-    border-radius: 10px;
-    background: orangered;
-    /*padding: 5px;*/
-    position: relative;
-}
-
-li a {
-    text-decoration: none;
-    color: black;
-    display: block;
-    font-size: 20px;
+    width: 100%;
 }

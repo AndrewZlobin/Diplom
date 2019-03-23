@@ -1,0 +1,18 @@
+.flex-row {
+    display: flex;
+    /*justify-content: space-around;*/
+    /*align-items: flex-start;*/
+    width: 100%;
+}
+
+.flex-row form {
+    width: 100%;
+}
+
+.flex-elem {
+    flex: 1;
+}
+
+.flex-elem-2 {
+    flex: 2;
+}

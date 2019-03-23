@@ -14,65 +14,75 @@
     </head>
     <body>
         <div class="container">
-            <div class="menu flex-row-nav">
-                <ul class="flex-row-nav">
-                    <li><a class="flex-elem" href="main.html">Форма для оплаты парковки</a></li>
-                    <li><a class="flex-elem" href="authorization.html">Страница авторизации</a></li>
-                    <li><a class="flex-elem" href="registration.html">Страница регистрации</a></li>
-                    <li><a class="flex-elem" href="info.html">О нас</a>
-                        <ul class="submenu flex-col-nav">
-                            <li><a href="objects.html">Объекты</a></li>
-                            <li><a href="objects.html">Объекты</a></li>
-                            <li><a href="objects.html">Объекты</a></li>
-                            <li><a href="objects.html">Объекты</a></li>
+            <div class="menu">
+                <ul>
+                    <li><a href="main.html">Оплата</a></li>
+                    <li><a href="constant.html">Для постоянных пользователей</a>
+                        <ul class="submenu">
+                            <li><a href="authorization.html">Авторизация</a></li>
+                            <li><a href="registration.html">Регистрация</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="aboutus.html">О нас</a>
+                        <ul class="submenu">
                             <li><a href="objects.html">Объекты</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
 
-            <h1 align="center">Форма для авторизации на сайте</h1>
-            <br>
-            <form action="PHPServer"
-                  method="post"
-                  enctype="multipart/form-data">
-                <fieldset>
-                    <legend align="center"><strong>Пожалуйста, авторизируйтесь</strong></legend>
-                    <div>
-                        <label for="auth_mail">Ваша почта:</label>
-                        <br>
-                        <input id="auth_mail"
-                               type="email"
-                               placeholder="введите сюда адрес своей электронной почты"
-                               size="50"
-                               required>
-                    </div>
-                    <br>
-                    <div>
-                        <label for="auth_pwd">Пароль:</label>
-                        <br>
-                        <input id="auth_pwd"
-                               type="password"
-                               placeholder="введите сюда пароль"
-                               size="50"
-                               required>
-                    </div>
-                    <br>
-                    <div>
-                        <label for="auth_reset"><strong>Нажмите, чтобы сбросить, если введенные данные неверны:</strong></label>
-                        <br>
-                        <input id="auth_reset"
-                               type="reset">
-                    </div>
-                    <br>
-                    <div>
-                    <label for="auth_submit"><strong>Авторизация и вход на сайт:</strong></label>
-                    <br>
-                    <input id="auth_submit"
-                           type="submit">
-                    </div>
-                </fieldset>
-            </form>
-        </div>
+            <div class="flex-row">
+                <div class="flex-elem">
+                    <h1 align="center">Если у Вас имеется абонементная карта, авторизируйтесь для того, чтобы
+                        получить возможность работы с ней:</h1>
+                </div>
+            </div>
+
+                <div class="flex-row">
+                    <form action="PHPServer"
+                          method="post"
+                          enctype="multipart/form-data">
+                        <fieldset>
+                            <div class="flex-elem">
+                                <legend align="center"><strong>Пожалуйста, авторизируйтесь</strong></legend>
+                            </div>
+                            <div class="flex-row">
+                                <div class="flex-elem">
+                                    <label for="auth_mail">Ваша почта:</label>
+                                </div>
+                                <div class="flex-elem">
+                                    <label for="auth_pwd">Пароль:</label>
+                                </div>
+                            </div>
+                            <div class="flex-row">
+                            <div class="flex-elem">
+                                <input id="auth_mail"
+                                       type="email"
+                                       placeholder="введите сюда адрес своей электронной почты"
+                                       size="50"
+                                       required>
+                            </div>
+                                <div class="flex-elem">
+                                    <input id="auth_pwd"
+                                           type="password"
+                                           placeholder="введите сюда пароль"
+                                           size="50"
+                                           required>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="auth_reset"><strong>Нажмите, чтобы сбросить, если введенные данные неверны:</strong></label>
+                                <input id="auth_reset"
+                                       type="reset">
+                            </div>
+                            <div>
+                                <label for="auth_submit"><strong>Авторизация и вход на сайт:</strong></label>
+                                <input id="auth_submit"
+                                       type="submit">
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
     </body>
 </html>
