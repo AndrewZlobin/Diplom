@@ -1,5 +1,7 @@
 /*@import url("style-auth.css");*/
-/*@import url("style-const.css");*/
+/*@import url("style-quickregauth.css");*/
+
+/*Основные настройки стилей для всех страничек сайта*/
 
 * {
     margin: 0;
@@ -16,11 +18,14 @@ body {
     color: white;
 }
 
+/*Установка размера видимой части страницы с ограничением в 960 пикселей*/
+
 .container {
     max-width: 960px;
     margin: 0 auto;
 }
 
+/*Стили для навигационного меню*/
 
 .menu a {
     color: black;
@@ -50,7 +55,6 @@ body {
 
 .menu li:hover .submenu > li {
     display: block;
-    /*top: 0px;*/
 }
 
 .submenu > li {

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Constant</title>
+    <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="favicon.ico">
+    <link rel="stylesheet"
+          href="styles/style-general.css">
+    <link rel="stylesheet"
+          href="styles/style-flex.css">
+    <link rel="stylesheet"
+          href="styles/style-quickregauth.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Страница для быстрой авторизации/регистрации">
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li><a href="main.html">Оплата</a></li>
+                <li><a href="quickregauth.html">Для постоянных пользователей</a>
+                    <ul class="submenu">
+                        <li><a href="authorization.html">Авторизация</a></li>
+                        <li><a href="registration.html">Регистрация</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">О нас</a>
+                    <ul class="submenu">
+                        <li><a href="objects.html">Объекты</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+        <div class="flex-row">
+            <div class="flex-60">
+                <div class="style-p">
+                    <p class="memo">Если у Вас уже имеется абонементная карты, то Вы можете пройти
+                        быструю авторизацию. Для этого нажмите на кнопку "Для авторизированный пользователей",
+                        а затем, в открывшемся окне, введите номер вашей карты</p>
+                </div>
+            </div>
+            <div class="flex-40">
+                <div class="style-a">
+                    <a href="#popup-auth">Для авторизированных пользователей</a>
+                </div>
+            </div>
+            <div class="flex-60">
+                <div class="style-p">
+                    <p class="memo">Для регистрации новой абонементной карты нажмите на кнопку "Для новых пользователей",
+                        а затем, в открывшемся окне, введите номер Вашего мобильного телефона</p>
+                </div>
+            </div>
+            <div class="flex-40">
+                <div class="style-a">
+                    <a href="#popup-reg">Для новых пользователей</a>
+                </div>
+            </div>
+        </div>
+
+        <!--<div class="flex-row">-->
+            <!--<div class="flex-50">-->
+                <!--<a href="#popup-auth">Для авторизированных пользователей</a>-->
+            <!--</div>-->
+            <!--<div class="flex-50">-->
+                <!--<a href="#popup-reg">Для новых пользователей</a>-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <div id="popup-auth" class="popup">
+            <div class="popupwindow">
+                <form>
+                    <input type="text" placeholder="Номер Вашей карты">
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+
+        <div id="popup-reg" class="popup">
+            <div class="popupwindow">
+                <form>
+                    <input type="text" placeholder="Ваш мобильный телефон">
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

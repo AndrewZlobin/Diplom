@@ -1,26 +1,27 @@
-.flex-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.flex-elem {
-    flex: 1;
-}
-
 .memo {
     color: darkgoldenrod;
     font-family: "Times New Roman";
-    font-size: 150%;
+    font-size: 100%;
 }
 
-.flex-elem > a {
+.style-p {
+    /*padding: 2%;*/
+}
+
+.style-a {
+    text-align: center;
+    vertical-align: middle;
+    /*padding: 2%;*/
+}
+
+.style-a a {
+    text-align: center;
     text-decoration: none;
     color: black;
     background: whitesmoke;
     border: lightslategray solid 1px;
     border-radius: 1px;
-    font-size: 150%;
+    font-size: 100%;
 }
 
 a:hover {

@@ -3,15 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="d60a4124-c87a-469e-a71d-e1e5bf2a2f12" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diplom-homework/aboutus.html" beforeDir="false" afterPath="$PROJECT_DIR$/diplom-homework/aboutus.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplom-homework/aboutus.html" beforeDir="false" afterPath="$PROJECT_DIR$/diplom-homework/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diplom-homework/authorization.html" beforeDir="false" afterPath="$PROJECT_DIR$/diplom-homework/authorization.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diplom-homework/constant.html" beforeDir="false" afterPath="$PROJECT_DIR$/diplom-homework/constant.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplom-homework/constant.html" beforeDir="false" afterPath="$PROJECT_DIR$/diplom-homework/quickregauth.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diplom-homework/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/diplom-homework/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diplom-homework/objects.html" beforeDir="false" afterPath="$PROJECT_DIR$/diplom-homework/objects.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diplom-homework/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/diplom-homework/registration.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diplom-homework/styles/style-auth.css" beforeDir="false" afterPath="$PROJECT_DIR$/diplom-homework/styles/style-auth.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diplom-homework/styles/style-const.css" beforeDir="false" afterPath="$PROJECT_DIR$/diplom-homework/styles/style-const.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diplom-homework/styles/style-gen.css" beforeDir="false" afterPath="$PROJECT_DIR$/diplom-homework/styles/style-gen.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplom-homework/styles/style-const.css" beforeDir="false" afterPath="$PROJECT_DIR$/diplom-homework/styles/style-quickregauth.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplom-homework/styles/style-gen.css" beforeDir="false" afterPath="$PROJECT_DIR$/diplom-homework/styles/style-general.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diplom-homework/styles/style-reg.css" beforeDir="false" afterPath="$PROJECT_DIR$/diplom-homework/styles/style-reg.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,46 +23,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/diplom-homework/main.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="60" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/diplom-homework/constant.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/diplom-homework/authorization.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="45" column="55" selection-start-line="45" selection-start-column="55" selection-end-line="45" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/diplom-homework/registration.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="74" column="55" selection-start-line="74" selection-start-column="55" selection-end-line="74" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/diplom-homework/styles/style-auth.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+            <state relative-caret-position="884">
+              <caret line="52" column="43" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -70,44 +34,58 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/diplom-homework/styles/style-reg.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" selection-start-line="23" selection-end-line="28" selection-end-column="1" />
+            <state relative-caret-position="153">
+              <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/diplom-homework/aboutus.html">
+        <entry file="file://$PROJECT_DIR$/diplom-homework/authorization.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="61" column="35" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/diplom-homework/styles/style-auth.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/diplom-homework/quickregauth.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="52" column="93" selection-start-line="52" selection-start-column="93" selection-end-line="52" selection-end-column="93" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/diplom-homework/styles/style-quickregauth.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="12" column="78" selection-start-line="12" selection-start-column="78" selection-end-line="12" selection-end-column="78" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/diplom-homework/objects.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="12" column="79" selection-start-line="12" selection-start-column="79" selection-end-line="12" selection-end-column="79" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/diplom-homework/styles/style-const.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+              <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/diplom-homework/styles/style-gen.css">
+        <entry file="file://$PROJECT_DIR$/diplom-homework/styles/style-flex.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+            <state relative-caret-position="461">
+              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/diplom-homework/styles/style-general.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="952">
+              <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -137,11 +115,15 @@
         <option value="$PROJECT_DIR$/diplom-homework/main.html" />
         <option value="$PROJECT_DIR$/diplom-homework/styles/style-const.css" />
         <option value="$PROJECT_DIR$/diplom-homework/constant.html" />
-        <option value="$PROJECT_DIR$/diplom-homework/authorization.html" />
-        <option value="$PROJECT_DIR$/diplom-homework/styles/style-reg.css" />
-        <option value="$PROJECT_DIR$/diplom-homework/registration.html" />
-        <option value="$PROJECT_DIR$/diplom-homework/styles/style-auth.css" />
         <option value="$PROJECT_DIR$/diplom-homework/styles/style-gen.css" />
+        <option value="$PROJECT_DIR$/diplom-homework/styles/style-general.css" />
+        <option value="$PROJECT_DIR$/diplom-homework/styles/style-auth.css" />
+        <option value="$PROJECT_DIR$/diplom-homework/styles/style-quickregauth.css" />
+        <option value="$PROJECT_DIR$/diplom-homework/quickregauth.html" />
+        <option value="$PROJECT_DIR$/diplom-homework/authorization.html" />
+        <option value="$PROJECT_DIR$/diplom-homework/registration.html" />
+        <option value="$PROJECT_DIR$/diplom-homework/styles/style-reg.css" />
+        <option value="$PROJECT_DIR$/diplom-homework/styles/style-flex.css" />
       </list>
     </option>
   </component>
@@ -151,7 +133,7 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="697" />
+    <option name="width" value="708" />
     <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -220,7 +202,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553266368949</updated>
-      <workItem from="1553266374245" duration="35152000" />
+      <workItem from="1553266374245" duration="45363000" />
     </task>
     <task id="LOCAL-00001" summary="Made a new repository for graduated project">
       <created>1553266516153</created>
@@ -243,18 +225,25 @@
       <option name="project" value="LOCAL" />
       <updated>1553329624435</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Authorization page is made with flexbox&#10;Registration page is made with flexbox">
+      <created>1553343577133</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1553343577133</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35152000" />
+    <option name="totallyTimeSpent" value="45363000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22314675" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20499243" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -262,7 +251,7 @@
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -281,7 +270,8 @@
     <MESSAGE value="Made a new repository for graduated project" />
     <MESSAGE value="Made a dropdown menu on all pages&#10;Sorted the pages for future graduated project" />
     <MESSAGE value="Add modal windows on constant.html&#10;Done the dropdown nav menu on every page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add modal windows on constant.html&#10;Done the dropdown nav menu on every page" />
+    <MESSAGE value="Authorization page is made with flexbox&#10;Registration page is made with flexbox" />
+    <option name="LAST_COMMIT_MESSAGE" value="Authorization page is made with flexbox&#10;Registration page is made with flexbox" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/diplom-homework/adv.html">
@@ -297,14 +287,7 @@
     <entry file="file://$PROJECT_DIR$/diplom-homework/styles/style-dealer.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/diplom-homework/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="60" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/diplom-homework/aboutus.html">
+    <entry file="file://$PROJECT_DIR$/diplom-homework/about.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="78" selection-start-line="12" selection-start-column="78" selection-end-line="12" selection-end-column="78" />
@@ -318,52 +301,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/diplom-homework/constant.html">
+    <entry file="file://$PROJECT_DIR$/diplom-homework/main.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+          <caret line="11" column="60" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/diplom-homework/styles/style-const.css">
+    <entry file="file://$PROJECT_DIR$/diplom-homework/styles/style-general.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        <state relative-caret-position="952">
+          <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/diplom-homework/registration.html">
+    <entry file="file://$PROJECT_DIR$/diplom-homework/styles/style-quickregauth.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="74" column="55" selection-start-line="74" selection-start-column="55" selection-end-line="74" selection-end-column="55" />
+        <state relative-caret-position="204">
+          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diplom-homework/styles/style-auth.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diplom-homework/styles/style-reg.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/diplom-homework/authorization.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="45" column="55" selection-start-line="45" selection-start-column="55" selection-end-line="45" selection-end-column="55" />
+        <state relative-caret-position="374">
+          <caret line="61" column="35" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/diplom-homework/styles/style-reg.css">
+    <entry file="file://$PROJECT_DIR$/diplom-homework/registration.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" selection-start-line="23" selection-end-line="28" selection-end-column="1" />
+        <state relative-caret-position="884">
+          <caret line="52" column="43" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/diplom-homework/styles/style-auth.css">
+    <entry file="file://$PROJECT_DIR$/diplom-homework/quickregauth.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        <state relative-caret-position="374">
+          <caret line="52" column="93" selection-start-line="52" selection-start-column="93" selection-end-line="52" selection-end-column="93" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/diplom-homework/styles/style-gen.css">
+    <entry file="file://$PROJECT_DIR$/diplom-homework/styles/style-flex.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+        <state relative-caret-position="461">
+          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
         </state>
       </provider>
     </entry>
