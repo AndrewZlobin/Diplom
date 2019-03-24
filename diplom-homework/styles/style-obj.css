@@ -1,0 +1,12 @@
+img {
+    width: 100%;
+    height: auto;
+}
+
+p {
+    font-size: 2vw;
+}
+
+.flex-row > .flex-col {
+    padding: 1em;
+}

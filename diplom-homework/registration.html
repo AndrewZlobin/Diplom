@@ -15,147 +15,149 @@
           href="styles/style-reg.css">
     <meta charset="UTF-8">
     <meta name="description" content="Форма для регистрации">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-        <div class="container">
-            <div class="menu">
-                <ul>
-                    <li><a href="main.html">Оплата</a></li>
-                    <li><a href="quickregauth.html">Для постоянных пользователей</a>
-                        <ul class="submenu">
-                            <li><a href="authorization.html">Авторизация</a></li>
-                            <li><a href="registration.html">Регистрация</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="about.html">О нас</a>
-                        <ul class="submenu">
-                            <li><a href="objects.html">Объекты</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-
-            <form action="PHPServer"
-                  method="post"
-                  enctype="multipart/form-data">
-                <fieldset>
-                    <div class="flex-row">
-                        <div class="flex-100">
-                            <legend align="center">Регистрация для новых клиентов</legend>
-                        </div>
-                    </div>
-                    <div class="flex-row">
-                        <div class="flex-20">
-                            <div>
-                                <label for="reg_login">Придумайте логин:</label>
-                            </div>
-                        </div>
-                        <div class="flex-75">
-                            <div>
-                                <input id="reg_login"
-                                       type="text"
-                                       placeholder="латинские буквы и цифры, от 2 до 20 символов"
-                                       minlength="2"
-                                       maxlength="20"
-                                       size="50"
-                                       autofocus
-                                       required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex-row">
-                        <div class="flex-20">
-                            <div>
-                                <label for="reg_mail">Ваш почтовый ящик:</label>
-                            </div>
-                        </div>
-                        <div class="flex-75">
-                            <div>
-                                <input id="reg_mail"
-                                       type="email"
-                                       placeholder="введите сюда адрес своей электронной почты"
-                                       size="50"
-                                       required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex-row">
-                        <div class="flex-20">
-                            <div>
-                                <label for="reg_pwd">Придумайте пароль:</label>
-                            </div>
-                        </div>
-                        <div class="flex-75">
-                            <div>
-                                <input id="reg_pwd"
-                                       type="password"
-                                       placeholder="введите сюда пароль"
-                                       minlength="2"
-                                       maxlength="15"
-                                       size="50"
-                                       required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex-row">
-                        <div class="flex-20">
-                            <div>
-                                <label for="reg_pwd_again">Повторите пароль:</label>
-                            </div>
-                        </div>
-                        <div class="flex-75">
-                            <div>
-                                <input id="reg_pwd_again"
-                                       type="password"
-                                       placeholder="повторите пароль"
-                                       minlength="2"
-                                       maxlength="15"
-                                       size="50"
-                                       required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex-row">
-                        <div class="flex-20">
-                            <div>
-                                <label for="reg_reset">Нажмите, чтобы сбросить, если введенные данные неверны:</label>
-                            </div>
-                        </div>
-                        <div class="flex-75">
-                            <div>
-                                <input id="reg_reset"
-                                       type="reset">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex-row">
-                        <div class="flex-20">
-                            <div>
-                                <label for="reg_submit">Регистрация и получение доступа на сайт:</label>
-                            </div>
-                        </div>
-                        <div class="flex-75">
-                            <div>
-                                <input id="reg_submit"
-                                       type="submit">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex-row">
-                        <div class="flex-20">
-                            <div>
-                                <label>Вы можете загрузить 1 изображение в качестве своего аватара:</label>
-                            </div>
-                        </div>
-                        <div class="flex-75">
-                            <div>
-                                <input type="file" accept="image/*">
-                            </div>
-                        </div>
-                    </div>
-                </fieldset>
-            </form>
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li><a href="oncetimepay.html">Разовая оплата парковки</a></li>
+                <li><a href="quickregauth.html">Для постоянных пользователей</a>
+                    <ul class="submenu">
+                        <li><a href="authorization.html">Авторизация</a></li>
+                        <li><a href="registration.html">Регистрация</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">О нас</a>
+                    <ul class="submenu">
+                        <li><a href="objects.html">Объекты</a></li>
+                        <li><a href="show.html">Выставки</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
+
+        <form action="PHPServer"
+              method="post"
+              enctype="multipart/form-data">
+            <fieldset>
+                <div class="flex-row">
+                    <div class="flex-100">
+                        <legend align="center">Регистрация для новых клиентов</legend>
+                    </div>
+                </div>
+                <div class="flex-row">
+                    <div class="flex-20">
+                        <div>
+                            <label for="reg_login">Придумайте логин:</label>
+                        </div>
+                    </div>
+                    <div class="flex-75">
+                        <div>
+                            <input id="reg_login"
+                                   type="text"
+                                   placeholder="латинские буквы и цифры, от 2 до 20 символов"
+                                   minlength="2"
+                                   maxlength="20"
+                                   size="50"
+                                   autofocus
+                                   required>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-row">
+                    <div class="flex-20">
+                        <div>
+                            <label for="reg_mail">Ваш почтовый ящик:</label>
+                        </div>
+                    </div>
+                    <div class="flex-75">
+                        <div>
+                            <input id="reg_mail"
+                                   type="email"
+                                   placeholder="введите сюда адрес своей электронной почты"
+                                   size="50"
+                                   required>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-row">
+                    <div class="flex-20">
+                        <div>
+                            <label for="reg_pwd">Придумайте пароль:</label>
+                        </div>
+                    </div>
+                    <div class="flex-75">
+                        <div>
+                            <input id="reg_pwd"
+                                   type="password"
+                                   placeholder="введите сюда пароль"
+                                   minlength="2"
+                                   maxlength="15"
+                                   size="50"
+                                   required>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-row">
+                    <div class="flex-20">
+                        <div>
+                            <label for="reg_pwd_again">Повторите пароль:</label>
+                        </div>
+                    </div>
+                    <div class="flex-75">
+                        <div>
+                            <input id="reg_pwd_again"
+                                   type="password"
+                                   placeholder="повторите пароль"
+                                   minlength="2"
+                                   maxlength="15"
+                                   size="50"
+                                   required>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-row">
+                    <div class="flex-20">
+                        <div>
+                            <label for="reg_reset">Нажмите, чтобы сбросить, если введенные данные неверны:</label>
+                        </div>
+                    </div>
+                    <div class="flex-75">
+                        <div>
+                            <input id="reg_reset"
+                                   type="reset">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-row">
+                    <div class="flex-20">
+                        <div>
+                            <label for="reg_submit">Регистрация и получение доступа на сайт:</label>
+                        </div>
+                    </div>
+                    <div class="flex-75">
+                        <div>
+                            <input id="reg_submit"
+                                   type="submit">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-row">
+                    <div class="flex-20">
+                        <div>
+                            <label>Вы можете загрузить 1 изображение в качестве своего аватара:</label>
+                        </div>
+                    </div>
+                    <div class="flex-75">
+                        <div>
+                            <input type="file" accept="image/*">
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
 </body>
 </html>
 
