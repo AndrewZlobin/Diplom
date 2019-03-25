@@ -65,9 +65,70 @@
 
 .flex-main-right {
     display: flex;
-    /*flex-direction: column;*/
+    flex-direction: column;
     flex: 100%;
     justify-content: center;
     align-items: center;
     padding: 2%;
+}
+
+@media screen and (max-width: 600px) {
+    .nav-menu ul{
+        display: flex;
+        flex-direction: column;
+        float: left;
+    }
+    .submenu > li {
+        display: flex;
+        flex-direction: column;
+        float: left;
+    }
+
+    .submenu {
+        display: flex;
+        flex-direction: column;
+        float: left;
+    }
+
+    .flex-center {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .flex-right {
+        display: none;
+    }
+
+    .flex-center {
+        flex: 100%;
+    }
+
+    .nav-menu ul{
+        display: flex;
+        flex-direction: column;
+        float: left;
+        width: 100%;
+    }
+
+    .nav-menu li:hover .submenu > li {
+        top: 0;
+        display: inline-block;
+    }
+
+    .flex-center {
+        flex-direction: row;
+    }
+
+    .flex-bottom {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .flex-bottom p {
+        width: 75%;
+    }
 }

@@ -63,3 +63,8 @@ body {
     flex-direction: column;
     width: 100%;
 }
+
+img {
+    height: auto;
+    width: 50vw;
+}
