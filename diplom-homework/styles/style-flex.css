@@ -1,84 +1,73 @@
-.flex-row {
+.flex-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
 }
 
-.flex-col {
+.flex-menu {
+    display: flex;
+    flex-direction: row;
+    flex: 100%;
+    /*padding: 2%;*/
+}
+
+.flex-grow-menu {
+    flex-grow: 1;
+}
+
+
+.flex-left {
     display: flex;
     flex-direction: column;
+    flex: 5%;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgoldenrod;
+    /*padding: 2%;*/
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: row;
+    flex: 80%;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+.flex-right {
+    display: flex;
+    flex-direction: column;
+    flex: 5%;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgoldenrod;
+    /*padding: 2%;*/
+}
+
+.flex-bottom {
+    display: flex;
+    flex-direction: row;
+    flex: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 0;
+}
+
+.flex-main-left {
+    display: flex;
+    flex-direction: column;
+    flex: 100%;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    padding: 2%;
 }
 
-.flex-10 {
-    flex: 10%;
-    /*background-color: red;*/
-}
-
-.flex-20 {
-    flex: 20%;
-    /*background-color: yellow;*/
-}
-
-.flex-25 {
-    flex: 25%;
-    /*background-color: red;*/
-}
-
-.flex-30 {
-    flex: 30%;
-    /*background-color: yellow;*/
-}
-
-.flex-40 {
-    flex: 40%;
-    /*background-color: red;*/
-}
-
-.flex-50 {
-    flex: 50%;
-    /*background-color: yellow;*/
-}
-
-.flex-60 {
-    flex: 60%;
-    /*background-color: blue;*/
-}
-
-.flex-70 {
-    flex: 70%;
-    /*background-color: red;*/
-}
-
-.flex-75 {
-    flex: 75%;
-}
-
-.flex-80 {
-    flex: 90%;
-    /*background-color: red;*/
-}
-
-.flex-90 {
-    flex: 90%;
-    /*background-color: blue;*/
-}
-
-.flex-100 {
+.flex-main-right {
+    display: flex;
+    /*flex-direction: column;*/
     flex: 100%;
-}
-
-.flex-20 div,
-.flex-75 div,
-.flex-40 div,
-.flex-60 div {
-    padding: 2% 0 2% 2%;
-}
-
-div > p {
-    text-wrap: normal;
-    font-family: Castellar;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
 }

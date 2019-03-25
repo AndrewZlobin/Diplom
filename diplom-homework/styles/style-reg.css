@@ -1,5 +1,5 @@
 label {
-    font-family: "Droid Sans";
+    font-family: "Comic Sans MS";
     font-weight: bold;
     font-size: 90%;
     color: orangered;
@@ -7,4 +7,9 @@ label {
 
 fieldset {
     border: 0 none;
+}
+
+img {
+    width: 75%;
+    height: auto;
 }

@@ -1,7 +1,7 @@
 .memo {
     color: orangered;
     font-family: "Times New Roman";
-    font-size: 100%;
+    font-size: 3vw;
 }
 
 .style-p {
@@ -24,7 +24,7 @@
     font-size: 100%;
 }
 
-a:hover {
+.style-a a:hover {
     background: darkgrey;
     color: whitesmoke;
 }

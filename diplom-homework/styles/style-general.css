@@ -17,58 +17,49 @@ body {
     background-position: center center;
     color: white;
 }
-
-/*Установка размера видимой части страницы с ограничением в 960 пикселей*/
-
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-    background-image: url(../images/background_alt.png);
-    background-size: 300px;
-    background-repeat: repeat;
-    background-attachment: fixed;
-    background-position: center center;
-}
-
 /*Стили для навигационного меню*/
 
-.menu a {
-    color: black;
-    background: darkgrey;
+.nav-menu a {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    background: orangered;
+    color: whitesmoke;
     text-decoration: none;
-    height: 48px;
-    font-family: "Droid Sans";
+    text-transform: uppercase;
+    font-family: "Trebuchet MS";
+    font-size: 3vw;
 }
 
-.menu a:hover {
-    background: lightslategray;
+.nav-menu a:hover {
+    background: whitesmoke;
+    color: orangered;
 }
 
-.menu ul {
-    list-style-type: none;
+.nav-menu ul {
     display: flex;
+    list-style: none;
 }
 
-.menu li {
-    width: 100%;
+.nav-menu ul li {
     position: relative;
+    width: 100%;
     text-align: center;
 }
 
-.menu li:hover .submenu > li {
+.nav-menu li:hover .submenu > li {
+    top: 0;
     display: block;
 }
 
 .submenu > li {
+    position: relative;
     display: none;
 }
 
 .submenu {
+    position: absolute;
     display: flex;
     flex-direction: column;
-    position: absolute;
     width: 100%;
 }
