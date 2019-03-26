@@ -20,32 +20,43 @@
 <body>
     <div class="flex-container">
         <div class="flex-menu">
-            <nav class="nav-menu flex-grow-menu">
+            <nav class="nav-menu">
                 <ul>
+                    <img src="images/hamburger.png" alt="MENU" class="hamburger">
                     <li>
                         <a href="oncetimepay.html">Разовая оплата</a>
                     </li>
                     <li>
-                        <a href="quickregauth.html">Абонементы</a>
-                        <ul class="submenu">
-                            <li>
-                                <a href="authorization.html">Авторизация</a>
-                            </li>
-                            <li>
-                                <a href="registration.html">Регистрация</a>
-                            </li>
-                        </ul>
+                        <div class="dropdown">
+                            <button class="drop-button">Карты</button>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="quickregauth.html">Абонементы</a>
+                                </li>
+                                <li>
+                                    <a href="authorization.html">Авторизация</a>
+                                </li>
+                                <li>
+                                    <a href="registration.html">Регистрация</a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                     <li>
-                        <a href="about.html">О нас</a>
-                        <ul class="submenu">
-                            <li>
-                                <a href="objects.html">Объекты</a>
-                            </li>
-                            <li>
-                                <a href="show.html">Выставки</a>
-                            </li>
-                        </ul>
+                        <div class="dropdown">
+                            <button class="drop-button">Об АП-ПРО</button>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="about.html">О нас</a>
+                                </li>
+                                <li>
+                                    <a href="objects.html">Объекты</a>
+                                </li>
+                                <li>
+                                    <a href="show.html">Выставки</a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
             </nav>

@@ -19,26 +19,46 @@ body {
 }
 /*Стили для навигационного меню*/
 
-.nav-menu a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: orangered;
-    color: whitesmoke;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: "Trebuchet MS";
-    font-size: 3vw;
+.dropdown button {
+    display: none;
 }
 
-.nav-menu a:hover {
-    background: whitesmoke;
-    color: orangered;
+.nav-menu {
+    width: 100%;
+}
+
+.nav-menu img {
+    display: none;
+}
+
+.drop-button button {
+    display: none;
+    padding: 0;
+    border: 0;
 }
 
 .nav-menu ul {
     display: flex;
     list-style: none;
+}
+
+.nav-menu a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: darkorange;
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Trebuchet MS";
+    font-size: 2vw;
+    /*padding: 5%;*/
+    border: black solid 1px;
+}
+
+.nav-menu a:hover {
+    background: whitesmoke;
+    color: darkorange;
 }
 
 .nav-menu ul li {
@@ -47,22 +67,22 @@ body {
     text-align: center;
 }
 
-.nav-menu li:hover .submenu > li {
-    top: 0;
-    display: block;
-}
+/*.nav-menu li:hover .submenu > li {*/
+    /*top: 0;*/
+    /*display: block;*/
+/*}*/
 
-.submenu > li {
-    position: relative;
-    display: none;
-}
+/*.submenu > li {*/
+    /*position: relative;*/
+    /*display: none;*/
+/*}*/
 
-.submenu {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
+/*.submenu {*/
+    /*position: absolute;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*width: 100%;*/
+/*}*/
 
 img {
     height: auto;

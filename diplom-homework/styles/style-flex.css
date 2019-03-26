@@ -18,7 +18,7 @@
 .flex-left {
     display: flex;
     flex-direction: column;
-    flex: 5%;
+    flex: 10%;
     justify-content: center;
     align-items: center;
     background-color: darkgoldenrod;
@@ -37,7 +37,7 @@
 .flex-right {
     display: flex;
     flex-direction: column;
-    flex: 5%;
+    flex: 10%;
     justify-content: center;
     align-items: center;
     background-color: darkgoldenrod;
@@ -73,26 +73,7 @@
 }
 
 @media screen and (max-width: 600px) {
-    .nav-menu ul{
-        display: flex;
-        flex-direction: column;
-        float: left;
-    }
-    .submenu > li {
-        display: flex;
-        flex-direction: column;
-        float: left;
-    }
-
-    .submenu {
-        display: flex;
-        flex-direction: column;
-        float: left;
-    }
-
-    .flex-center {
-        flex-direction: column;
-    }
+    /*Здесь я пока не знаю =( */
 }
 
 @media screen and (max-width: 768px) {
@@ -130,5 +111,44 @@
 
     .flex-bottom p {
         width: 75%;
+    }
+}
+
+@media screen and (max-width: 996px) {
+
+    .dropdown button {
+        display: inline;
+        padding: 1% 0;
+    }
+
+    .drop-button {
+        background-color: darkorange;
+        color: whitesmoke;
+        width: 100%;
+        /*padding: 1%;*/
+        border: black solid 1px;
+    }
+
+    .nav-menu .dropdown {
+        display: inline;
+        /*background-color: darkorange;*/
+        color: whitesmoke;
+    }
+
+    .nav-menu li:hover .submenu > li {
+        top: 0;
+        display: block;
+    }
+
+    .submenu > li {
+        position: relative;
+        display: none;
+    }
+
+    .submenu {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
 }
