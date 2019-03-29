@@ -1,8 +1,8 @@
 label {
     font-family: "Comic Sans MS";
     font-weight: bold;
-    font-size: 90%;
-    color: orangered;
+    font-size: 2vw;
+    color: black;
 }
 
 fieldset {
@@ -13,3 +13,40 @@ img {
     width: 75%;
     height: auto;
 }
+
+.header {
+    order: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.elements-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw 0;
+}
+
+.elements-flex input[type="reset"],
+.elements-flex input[type="submit"] {
+    background-color: lightgray;
+    border: none;
+    text-decoration: none;
+    color: black;
+    padding: 3vw 3vw ;
+    cursor: pointer;
+    font-family: "Arial Black";
+    border-radius: 10px;
+}
+
+.elements-flex input[type="file"] {
+    border: none;
+    text-decoration: none;
+    color: black;
+    padding: 3vw 3vw ;
+    cursor: pointer;
+    font-family: "Arial";
+    object-fit: cover;
+}
+
