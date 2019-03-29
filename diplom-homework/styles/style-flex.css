@@ -1,3 +1,156 @@
+.center-bar {
+    display: flex;
+    flex-direction: row;
+    flex: 10;
+}
+
+.center-bar .left-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+    order: 0;
+}
+
+.center-bar .center-menu {
+    display: flex;
+    flex-direction: column;
+    flex: 6;
+    order: 1;
+}
+
+.center-bar .right-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+    order: 2;
+}
+
+.center-bar .footer-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.help-moscow {
+    transform: rotate(270deg);
+    background-color:crimson;
+    opacity: 0.9;
+    border: none;
+    text-decoration: none;
+    color: black;
+    padding: 2vw;
+    margin: 10vw 0;
+    cursor: pointer;
+    font-family: Arial Black;
+    font-size: 3vw;
+    border-radius: 25px;
+}
+
+.modal-moscow {
+    position: fixed;
+    font-family: Helvetica;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    transition: opacity 400ms ease-in;
+    display: none;
+    pointer-events: none;
+}
+
+.modal-moscow:target {
+    display: block;
+    pointer-events: auto;
+}
+
+.modal-moscow > div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: coral;
+}
+
+.help-spb {
+    transform: rotate(270deg);
+    background-color: crimson;
+    border: none;
+    text-decoration: none;
+    color: black;
+    padding: 2vw;
+    margin: 4vw;
+    cursor: pointer;
+    font-family: "Arial Black";
+    font-size: 3vw;
+    border-radius: 25px;
+}
+
+.modal-spb {
+    position: fixed;
+    font-family: Helvetica;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    transition: opacity 400ms ease-in;
+    display: none;
+    pointer-events: none;
+}
+
+.modal-spb:target {
+    display: block;
+    pointer-events: auto;
+}
+
+.modal-spb > div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: coral;
+}
+
+.help-samara {
+    transform: rotate(90deg);
+    background-color: crimson;
+    border: none;
+    text-decoration: none;
+    color: black;
+    padding: 2vw;
+    margin: 10vw 0;
+    cursor: help;
+    font-family: "Arial Black";
+    font-size: 3vw;
+    border-radius: 25px;
+}
+
+.help-ekaterinburg {
+    transform: rotate(90deg);
+    background-color: crimson;
+    border: none;
+    text-decoration: none;
+    color: black;
+    padding: 2vw;
+    margin: 10vw 0;
+    cursor: help;
+    font-family: "Arial Black";
+    font-size: 3vw;
+    border-radius: 25px;
+}
+
+
+/*Про запас*/
 .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -77,6 +230,30 @@
 }
 
 @media screen and (max-width: 768px) {
+
+    .center-bar .center-menu {
+        display: flex;
+        flex-direction: row;
+        flex: 7;
+        order: 1;
+    }
+
+    /*Для левого и правого полей*/
+    .center-bar .left-menu {
+        display: flex;
+        flex-direction: column;
+        flex: 3;
+        order: 0;
+    }
+
+    .center-bar .right-menu {
+        display: flex;
+        flex-direction: column;
+        flex: 3;
+        order: 2;
+    }
+
+    /*Backup*/
     .flex-right {
         display: none;
     }
@@ -112,43 +289,51 @@
     .flex-bottom p {
         width: 75%;
     }
-}
 
-@media screen and (max-width: 996px) {
-
-    .dropdown button {
-        display: inline;
-        padding: 1% 0;
-    }
-
-    .drop-button {
-        background-color: darkorange;
-        color: whitesmoke;
-        width: 100%;
-        /*padding: 1%;*/
-        border: black solid 1px;
-    }
-
-    .nav-menu .dropdown {
-        display: inline;
-        /*background-color: darkorange;*/
-        color: whitesmoke;
-    }
-
-    .nav-menu li:hover .submenu > li {
-        top: 0;
-        display: block;
-    }
-
-    .submenu > li {
-        position: relative;
-        display: none;
-    }
-
-    .submenu {
-        position: absolute;
+    .dropdown {
         display: flex;
         flex-direction: column;
-        width: 100%;
     }
 }
+
+/*@media screen and (max-width: 996px) {*/
+
+
+    /*!**!*/
+
+    /*.dropdown p {*/
+        /*display: flex;*/
+        /*!*padding: 1% 0;*!*/
+    /*}*/
+
+    /*.drop-button {*/
+        /*background-color: darkorange;*/
+        /*color: whitesmoke;*/
+        /*width: 100%;*/
+        /*!*padding: 1%;*!*/
+        /*border: black solid 1px;*/
+    /*}*/
+
+    /*.nav-menu .dropdown {*/
+        /*display: inline;*/
+        /*!*background-color: darkorange;*!*/
+        /*color: whitesmoke;*/
+    /*}*/
+
+    /*.nav-menu li:hover .submenu > li {*/
+        /*top: 0;*/
+        /*display: block;*/
+    /*}*/
+
+    /*.submenu > li {*/
+        /*position: relative;*/
+        /*display: none;*/
+    /*}*/
+
+    /*.submenu {*/
+        /*position: absolute;*/
+        /*display: flex;*/
+        /*flex-direction: column;*/
+        /*width: 100%;*/
+    /*}*/
+/*}*/
