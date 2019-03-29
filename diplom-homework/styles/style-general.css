@@ -10,16 +10,62 @@
 }
 
 body {
-    background-image: url(../images/background.jpg);
-    background-size: 300px;
-    background-repeat: repeat;
+    background-image: url(../images/bg.jpg);
+    margin: 0;
+    padding: 0;
     background-attachment: fixed;
-    background-position: center center;
+    width: 100%;
     color: white;
+    display: table;
 }
 /*Стили для навигационного меню*/
+.top-bar {
+    width: 100%;
+}
 
-.dropdown button {
+.top-bar ul {
+
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: darkgrey;
+}
+
+.top-bar ul li {
+    border: darkorange solid 1px;
+    border-radius: 1px;
+}
+
+.top-bar ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.center-bar .left-menu {
+    background: rgba(140, 140, 140, 0.2);
+}
+
+.center-bar .right-menu {
+    background: rgba(140, 140, 140, 0.2);
+}
+
+/**/
+
+.button-menu {
+    display: none;
+}
+
+.button-submenu {
+    display: none;
+}
+
+
+.dropdown {
+    display: flex;
+}
+
+.drop-button {
     display: none;
 }
 
@@ -29,12 +75,6 @@ body {
 
 .nav-menu img {
     display: none;
-}
-
-.drop-button button {
-    display: none;
-    padding: 0;
-    border: 0;
 }
 
 .nav-menu ul {
@@ -61,11 +101,11 @@ body {
     color: darkorange;
 }
 
-.nav-menu ul li {
-    position: relative;
-    width: 100%;
-    text-align: center;
-}
+/*.nav-menu ul li {*/
+    /*position: relative;*/
+    /*width: 100%;*/
+    /*text-align: center;*/
+/*}*/
 
 /*.nav-menu li:hover .submenu > li {*/
     /*top: 0;*/
