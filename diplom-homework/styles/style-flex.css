@@ -7,8 +7,8 @@
 .center-bar .left-menu {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: stretch;
+    justify-content: flex-start;
     flex: 2;
     order: 0;
 }
@@ -23,35 +23,34 @@
 .center-bar .right-menu {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: stretch;
+    justify-content: flex-start;
     flex: 2;
     order: 2;
 }
 
-.center-bar .footer-bar {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.help-moscow {
-    transform: rotate(270deg);
+.help-moscow,
+.help-spb,
+.help-samara,
+.help-ekaterinburg {
+    /*transform: rotate(270deg);*/
     background-color:crimson;
     opacity: 0.9;
     border: none;
     text-decoration: none;
     color: black;
-    padding: 2vw;
-    margin: 10vw 0;
+    padding: 0.75em;
+    margin: 3em 1em;
     cursor: pointer;
     font-family: Arial Black;
-    font-size: 3vw;
+    font-size: 2em;
     border-radius: 25px;
 }
 
-.modal-moscow {
+.modal-moscow,
+.modal-spb,
+.modal-samara,
+.modal-ekaterinburg {
     position: fixed;
     font-family: Helvetica;
     top: 0;
@@ -65,88 +64,24 @@
     pointer-events: none;
 }
 
-.modal-moscow:target {
+.modal-moscow:target,
+.modal-spb:target,
+.modal-samara:target,
+.modal-ekaterinburg:target {
     display: block;
     pointer-events: auto;
 }
 
-.modal-moscow > div {
+.modal-moscow > div,
+.modal-spb > div,
+.modal-samara > div,
+.modal-ekaterinburg > div {
     width: 400px;
     position: relative;
     margin: 10% auto;
     padding: 5px 20px 13px 20px;
     border-radius: 10px;
     background: coral;
-}
-
-.help-spb {
-    transform: rotate(270deg);
-    background-color: crimson;
-    border: none;
-    text-decoration: none;
-    color: black;
-    padding: 2vw;
-    margin: 4vw;
-    cursor: pointer;
-    font-family: "Arial Black";
-    font-size: 3vw;
-    border-radius: 25px;
-}
-
-.modal-spb {
-    position: fixed;
-    font-family: Helvetica;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0,0,0,0.8);
-    z-index: 99999;
-    transition: opacity 400ms ease-in;
-    display: none;
-    pointer-events: none;
-}
-
-.modal-spb:target {
-    display: block;
-    pointer-events: auto;
-}
-
-.modal-spb > div {
-    width: 400px;
-    position: relative;
-    margin: 10% auto;
-    padding: 5px 20px 13px 20px;
-    border-radius: 10px;
-    background: coral;
-}
-
-.help-samara {
-    transform: rotate(90deg);
-    background-color: crimson;
-    border: none;
-    text-decoration: none;
-    color: black;
-    padding: 2vw;
-    margin: 10vw 0;
-    cursor: help;
-    font-family: "Arial Black";
-    font-size: 3vw;
-    border-radius: 25px;
-}
-
-.help-ekaterinburg {
-    transform: rotate(90deg);
-    background-color: crimson;
-    border: none;
-    text-decoration: none;
-    color: black;
-    padding: 2vw;
-    margin: 10vw 0;
-    cursor: help;
-    font-family: "Arial Black";
-    font-size: 3vw;
-    border-radius: 25px;
 }
 
 
@@ -203,7 +138,7 @@
     flex: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 2% 0;
+    padding: 1em 0;
 }
 
 .flex-main-left {
@@ -213,7 +148,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 2%;
+    padding: 1em;
 }
 
 .flex-main-right {
@@ -222,12 +157,130 @@
     flex: 100%;
     justify-content: center;
     align-items: center;
-    padding: 2%;
+    padding: 1em;
 }
 
-@media screen and (max-width: 600px) {
-    /*Здесь я пока не знаю =( */
+
+@media screen and (max-width: 996px) {
+
+    .top-bar a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1em;
+    }
+
+    .top-bar ul {
+        list-style: none;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: rgba(140, 140, 140, 0.2);
+    }
+    .top-bar ul li {
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+
+    .top-bar ul li p {
+        top: 0;
+        display: block;
+        font-size: 1em;
+    }
+
+    .top-bar ul li p:hover {
+        background-color: whitesmoke;
+        color: black;
+    }
+
+    .top-bar li:hover .dropdown-menu > li {
+        top: 0;
+        display: block;
+    }
+
+    .top-bar ul li ul.dropdown-menu li {
+        position: relative;
+        display: none;
+    }
+
+    .top-bar ul li ul.dropdown-menu {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .help-moscow,
+    .help-spb,
+    .help-samara,
+    .help-ekaterinburg {
+        background-color:crimson;
+        opacity: 0.9;
+        border: none;
+        text-decoration: none;
+        color: black;
+        padding: 0.25em;
+        margin: 1em 1em;
+        cursor: pointer;
+        font-family: Arial Black;
+        font-size: 1em;
+        border-radius: 25px;
+    }
+
+    .center-menu .elements-flex label {
+        font-weight: bold;
+        font-size: 1em;
+    }
+
+    .center-menu form fieldset .header legend {
+        font-size: 1.5em;
+    }
+
+    .center-bar .left-menu {
+        flex: 1;
+    }
+
+    .center-bar .center-menu {
+        display: flex;
+        flex: 5;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .center-bar .right-menu {
+        flex: 1;
+        display: none;
+    }
+
+    .elements-flex input[size]{
+        width: 20em;
+    }
+    .elements-flex input[type="reset"],
+    .elements-flex input[type="submit"] {
+        padding: 1em ;
+        font-size: 0.75em;
+    }
+
+    .flex-avatar .label {
+        padding: 1em ;
+        font-size: 0.75em;
+    }
+
+    .flex-avatar {
+        justify-content: flex-start;
+        padding: 1em 0;
+    }
+
+    .flex-avatar .label input[type="file"] {
+        display: none;
+    }
+
 }
+
 
 @media screen and (max-width: 768px) {
 
@@ -296,44 +349,6 @@
     }
 }
 
-/*@media screen and (max-width: 996px) {*/
-
-
-    /*!**!*/
-
-    /*.dropdown p {*/
-        /*display: flex;*/
-        /*!*padding: 1% 0;*!*/
-    /*}*/
-
-    /*.drop-button {*/
-        /*background-color: darkorange;*/
-        /*color: whitesmoke;*/
-        /*width: 100%;*/
-        /*!*padding: 1%;*!*/
-        /*border: black solid 1px;*/
-    /*}*/
-
-    /*.nav-menu .dropdown {*/
-        /*display: inline;*/
-        /*!*background-color: darkorange;*!*/
-        /*color: whitesmoke;*/
-    /*}*/
-
-    /*.nav-menu li:hover .submenu > li {*/
-        /*top: 0;*/
-        /*display: block;*/
-    /*}*/
-
-    /*.submenu > li {*/
-        /*position: relative;*/
-        /*display: none;*/
-    /*}*/
-
-    /*.submenu {*/
-        /*position: absolute;*/
-        /*display: flex;*/
-        /*flex-direction: column;*/
-        /*width: 100%;*/
-    /*}*/
-/*}*/
+@media screen and (max-width: 600px) {
+    /*Здесь я пока не знаю =( */
+}

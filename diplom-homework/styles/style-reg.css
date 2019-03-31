@@ -1,7 +1,7 @@
 label {
     font-family: "Comic Sans MS";
     font-weight: bold;
-    font-size: 2vw;
+    font-size: 2em;
     color: black;
 }
 
@@ -20,12 +20,28 @@ img {
     align-items: center;
 }
 
+.header legend {
+    font-size: 3em;
+}
+
 .elements-flex {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 2vw 0;
+    padding: 2em 0;
+}
+
+.flex-avatar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0;
+}
+
+.elements-flex input[placeholder]{
+    font-size: 1em;
 }
 
 .elements-flex input[type="reset"],
@@ -34,19 +50,36 @@ img {
     border: none;
     text-decoration: none;
     color: black;
-    padding: 3vw 3vw ;
+    padding: 2em ;
     cursor: pointer;
     font-family: "Arial Black";
     border-radius: 10px;
+    font-size: 1em;
 }
 
-.elements-flex input[type="file"] {
+.flex-avatar .label {
+    background-color: lightgray;
     border: none;
     text-decoration: none;
     color: black;
-    padding: 3vw 3vw ;
+    padding: 2em ;
     cursor: pointer;
     font-family: "Arial";
     object-fit: cover;
+    font-size: 1em;
 }
+
+.flex-avatar .label input[type="file"] {
+    display: none;
+    /*border: none;
+    text-decoration: none;
+    color: black;
+    padding: 2em ;
+    cursor: pointer;
+    font-family: "Arial";
+    object-fit: cover;
+    font-size: 1em;*/
+}
+
+
 

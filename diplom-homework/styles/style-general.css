@@ -18,28 +18,11 @@ body {
     color: white;
     display: table;
 }
-/*Стили для навигационного меню*/
+
+/*Общие стили*/
+
 .top-bar {
-    width: 100%;
-}
-
-.top-bar ul {
-
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: darkgrey;
-}
-
-.top-bar ul li {
-    border: darkorange solid 1px;
-    border-radius: 1px;
-}
-
-.top-bar ul li a {
-    text-decoration: none;
-    color: whitesmoke;
+    background: rgba(140, 140, 140, 0.2);
 }
 
 .center-bar .left-menu {
@@ -50,17 +33,155 @@ body {
     background: rgba(140, 140, 140, 0.2);
 }
 
-/**/
+.footer-bar {
+    background: rgba(140, 140, 140, 0.2);
+}
+
+.center-bar .center-menu {
+    margin: 1em;
+}
+
+/*Стили для навигационного меню*/
 
 .button-menu {
     display: none;
 }
 
-.button-submenu {
+.top-bar a {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Arial Narrow";
+    font-weight: bold;
+    background: rgba(140, 140, 140, 0.2);
+    text-decoration: none;
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-size: 1.5em;
+    padding: 1em;
+}
+
+.top-bar a:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.top-bar > ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-bar ul li.button-submenu {
+    position: relative;
+    /*width: 50%;*/
+}
+
+.top-bar ul li p {
     display: none;
 }
 
+.top-bar ul li ul.dropdown-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 
+.top-bar ul li ul li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/*ul.dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    display: inline;
+}*/
+
+/*.top-bar ul {
+
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.top-bar ul li {
+    border: darkorange solid 1px;
+    border-radius: 1px;
+}
+
+.top-bar ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+}*/
+
+/*Стили для нижней части страницы*/
+
+.footer-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-bar p {
+    font-family: Arial;
+    font-size: 2em;
+}
+
+.footer-bar .youtube {
+    background-color: red;
+    font-size: 1.25em;
+    border-radius: 15px;
+    padding: 1em 1em;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-bar .vk {
+    background-color: darkblue;
+    font-size: 1.25em;
+    border-radius: 15px;
+    padding: 1em 1em;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-bar .instagram {
+    background-color: darkmagenta;
+    font-size: 1.25em;
+    border-radius: 15px;
+    padding: 1em 1em;
+    text-decoration: none;
+    color: darkgoldenrod;
+}
+.footer-bar .odnoklassniki {
+    background-color: orange;
+    font-size: 1.25em;
+    border-radius: 15px;
+    padding: 1em 1em;
+    text-decoration: none;
+    color: black;
+}
+.footer-bar .google-plus {
+    background-color: whitesmoke;
+    font-size: 1.25em;
+    border-radius: 15px;
+    padding: 1em 1em;
+    text-decoration: none;
+    color: darkred;
+}
+
+
+/*Backup*/
+
+/*
 .dropdown {
     display: flex;
 }
@@ -92,7 +213,7 @@ body {
     text-transform: uppercase;
     font-family: "Trebuchet MS";
     font-size: 2vw;
-    /*padding: 5%;*/
+    !*padding: 5%;*!
     border: black solid 1px;
 }
 
@@ -101,30 +222,30 @@ body {
     color: darkorange;
 }
 
-/*.nav-menu ul li {*/
-    /*position: relative;*/
-    /*width: 100%;*/
-    /*text-align: center;*/
-/*}*/
+.nav-menu ul li {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
 
-/*.nav-menu li:hover .submenu > li {*/
-    /*top: 0;*/
-    /*display: block;*/
-/*}*/
+.nav-menu li:hover .submenu > li {
+    top: 0;
+    display: block;
+}
 
-/*.submenu > li {*/
-    /*position: relative;*/
-    /*display: none;*/
-/*}*/
+.submenu > li {
+    position: relative;
+    display: none;
+}
 
-/*.submenu {*/
-    /*position: absolute;*/
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*width: 100%;*/
-/*}*/
+.submenu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 
 img {
     height: auto;
     width: 50vw;
-}
+}*/
