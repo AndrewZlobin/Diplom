@@ -1,5 +1,5 @@
 /*@import url("style-auth.css");*/
-/*@import url("style-quickregauth.css");*/
+/*@import url("style-abonements.css");*/
 
 /*Основные настройки стилей для всех страничек сайта*/
 
@@ -47,6 +47,14 @@ body {
     display: none;
 }
 
+.top-bar {
+    display: flex;
+    flex-direction: row;
+    flex: 10;
+    justify-content: center;
+    align-items: center;
+}
+
 .top-bar a {
     display: flex;
     justify-content: space-around;
@@ -57,8 +65,8 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     color: whitesmoke;
-    font-size: 1.5em;
-    padding: 1em;
+    font-size: 2vw;
+    padding: 1vw;
 }
 
 .top-bar a:hover {
@@ -73,6 +81,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background: rgba(140, 140, 140, 0.2);
 }
 
 .top-bar ul li.button-submenu {
@@ -128,54 +137,61 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    flex: 10;
 }
 
 .footer-bar p {
     font-family: Arial;
-    font-size: 2em;
+    font-size: 2.5vw;
+    margin: 0.5vw 0;
 }
 
 .footer-bar .youtube {
     background-color: red;
-    font-size: 1.25em;
+    font-size: 1.75vw;
     border-radius: 15px;
-    padding: 1em 1em;
+    padding: 1.25vw;
     text-decoration: none;
     color: white;
+    margin: 0.5vw 0;
 }
 
 .footer-bar .vk {
     background-color: darkblue;
-    font-size: 1.25em;
+    font-size: 1.75vw;
     border-radius: 15px;
-    padding: 1em 1em;
+    padding: 1.25vw;
     text-decoration: none;
     color: white;
+    margin: 0.5vw 0;
 }
 
 .footer-bar .instagram {
     background-color: darkmagenta;
-    font-size: 1.25em;
+    font-size: 1.75vw;
     border-radius: 15px;
-    padding: 1em 1em;
+    padding: 1.25vw;
     text-decoration: none;
     color: darkgoldenrod;
+    margin: 0.5vw 0;
 }
 .footer-bar .odnoklassniki {
     background-color: orange;
-    font-size: 1.25em;
+    font-size: 1.75vw;
     border-radius: 15px;
-    padding: 1em 1em;
+    padding: 1.25vw;
     text-decoration: none;
     color: black;
+    margin: 0.5vw 0;
 }
 .footer-bar .google-plus {
     background-color: whitesmoke;
-    font-size: 1.25em;
+    font-size: 1.75vw;
     border-radius: 15px;
-    padding: 1em 1em;
+    padding: 1.25vw;
     text-decoration: none;
     color: darkred;
+    margin: 0.5vw 0;
 }
 
 

@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-
 <html lang="ru">
 <head>
-    <title>CardRegistration</title>
+    <title>Abonements</title>
     <link
             rel="shortcut icon"
             type="image/x-icon"
             href="favicon.ico">
     <link rel="stylesheet"
-          href="styles/style-general.css">
-    <link rel="stylesheet"
           href="styles/style-flex.css">
     <link rel="stylesheet"
-          href="styles/style-reg.css">
+          href="styles/style-abonements.css">
+    <link rel="stylesheet"
+          href="styles/style-general.css">
     <meta charset="UTF-8">
-    <meta name="description" content="Форма для регистрации">
+    <meta name="description" content="Страница для быстрой авторизации/регистрации">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -29,7 +28,7 @@
                     <li><a href="registration.html">Регистрация</a></li>
                 </ul>
             </li>
-            <li class="button-submenu"><p>ОБ АП-ПРО</p>
+            <li class="button-submenu"><p>Об АП-ПРО</p>
                 <ul class="dropdown-menu">
                     <li><a href="about.html">О нас</a></li>
                     <li><a href="objects.html">Объекты</a></li>
@@ -75,69 +74,47 @@
                   enctype="multipart/form-data">
                 <fieldset>
                     <div class="header">
-                        <legend align="center">Регистрация для новых клиентов</legend>
+                        <legend align="center"><strong>Авторизация для владельцев <br> абонементных карт</strong></legend>
                     </div>
                     <div class="elements-flex">
-                        <label class="login" for="reg_login">Ваш логин:</label>
-                        <input id="reg_login"
-                               class="reg-login"
-                               type="text"
-                               placeholder="латинские буквы и цифры, от 2 до 20 символов"
-                               minlength="2"
-                               maxlength="20"
-                               size="50"
-                               autofocus
-                               required>
+                        <p class="memo">
+                            Авторизация абонементной карты
+                        </p>
                     </div>
 
                     <div class="elements-flex">
-                        <label for="reg_mail">Ваша почта:</label>
-                        <input id="reg_mail"
-                               type="email"
-                               placeholder="введите сюда адрес своей электронной почты"
-                               size="50"
-                               required>
+                        <a href="#popup-auth">Для авторизированных пользователей</a>
+                        <div id="popup-auth" class="mwauth">
+                            <a href="#close" title="Закрыть" class="closebutton">CLOSE</a>
+                            <h3>Для авторизации просто введите <br> номер своей абонементной карты:</h3>
+                            <input id="quickauth"
+                                   type="text"
+                                   placeholder="0000AAAA"
+                                   minlength="2"
+                                   maxlength="15"
+                                   size="50"
+                                   required>
+                        </div>
                     </div>
 
                     <div class="elements-flex">
-                        <label for="reg_pwd">Пароль:</label>
-                        <input id="reg_pwd"
-                               type="password"
-                               placeholder="введите сюда пароль"
-                               minlength="2"
-                               maxlength="15"
-                               size="50"
-                               required>
+                        <p class="memo">
+                            Регистрация новой абонементной карты
+                        </p>
                     </div>
-
                     <div class="elements-flex">
-                        <label for="reg_pwd_again">Повторить пароль:</label>
-                        <input id="reg_pwd_again"
-                               type="password"
-                               placeholder="повторите пароль"
-                               minlength="2"
-                               maxlength="15"
-                               size="50"
-                               required>
-                    </div>
-
-                    <div class="elements-flex">
-                        <label for="reg_reset">Сброс введенных данных</label>
-                        <input id="reg_reset"
-                               type="reset">
-                    </div>
-
-                    <div class="flex-avatar">
-                        <label class="label">Загрузка аватара <br> (1 картинка)
-                            <input type="file" accept="image/*">
-                        </label>
-
-                    </div>
-
-                    <div class="elements-flex">
-                        <label for="reg_submit">Регистрация</label>
-                        <input id="reg_submit"
-                               type="submit">
+                        <a class="reftofull" href="#popup-reg">Для новых пользователей</a>
+                        <div id="popup-reg" class="mwreg">
+                            <a href="#close" title="Закрыть" class="closebutton">CLOSE</a>
+                            <h3>Для авторизации просто введите <br> номер своего телефона</h3>
+                            <input id="quickauth"
+                                   type="text"
+                                   placeholder="Начните ввод с +7"
+                                   minlength="2"
+                                   maxlength="15"
+                                   size="50"
+                                   required>
+                        </div>
                     </div>
 
                 </fieldset>
@@ -191,5 +168,68 @@
         <a href="https://plus.google.com/u/0/117505055496867180864" class="google-plus">Google+</a>
     </div>
 
+</body>
+</html>
+    <div class="flex-container">
+        <div class="flex-left">
+            РЕКЛАМА
+        </div>
+        <div class="flex-center">
+            <div class="flex-main-left">
+                <div class="style-p">
+                    <p class="memo">
+                        Авторизация абонементной карты
+                    </p>
+                </div>
+                <div class="style-p">
+                    <p class="memo">
+                        Регистрация новой абонементной карты
+                    </p>
+                </div>
+            </div>
+            <div class="flex-main-right">
+                <div class="style-a">
+
+                </div>
+                <div class="style-a">
+                    <a href="#popup-reg">Для новых пользователей</a>
+                    <div id="popup-auth" class="mwauth">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex-right">
+            РЕКЛАМА
+        </div>
+        <div class="flex-bottom">
+            <img src="images/footer/moscow.jpg" alt="Извините, ведутся технические работы" class="flex-shrink">
+            <p>
+                Представительство в Москве
+                125493, Россия, г. Москва,
+                ул. Авангардная, д. 3, бизнес-центр "Сатурн", офис 2211
+                Водный стадион     Речной вокзал
+                Телефон
+                8 (495) 108-74-26
+                E-mail
+                inbox@3390017.ru
+            </p>
+        </div>
+        <div class="flex-bottom">
+            <p>
+                Центральный офис и производство в Санкт-Петербурге
+                196084, Россия, г. Санкт-Петербург,
+                пр-т Лиговский, д. 254, литер В, пом. 4Н (В2-201)
+                Московские ворота
+                Телефон
+                8 (812) 339-00-17
+                E-mail
+                info@3390017.ru
+                Тех. поддержка
+                8 (812) 339-00-15
+            </p>
+            <img src="images/footer/spb.jpg" alt="Извините, ведутся технические работы">
+        </div>
+    </div>
 </body>
 </html>
